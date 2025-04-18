@@ -1,0 +1,7 @@
+# Serve sitemap at correct location
+
+/sitemap.xml /sitemap-index.xml 200
+
+# Redirect WWW to root
+
+/www.example.comk/* /:splat 301

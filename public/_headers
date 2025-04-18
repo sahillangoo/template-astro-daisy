@@ -1,0 +1,4 @@
+# Headers for Cloudflare Pages, No index for .pages.dev
+
+https://*.pages.dev/*
+  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet, notranslate, noimageindex
