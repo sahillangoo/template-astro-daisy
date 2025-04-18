@@ -1,8 +1,34 @@
 {
-  "extends": "astro/tsconfigs/strict",
-  "include": [".astro/types.d.ts", "**/*"],
-  "exclude": ["dist"],
+  "extends": "astro/tsconfigs/strict", // Inherits settings from Astro's strict TypeScript configuration
+  "include": [".astro/types.d.ts", "**/*"], // Specifies which files to include in the compilation
   "compilerOptions": {
-    "strictNullChecks": true
-  }
+    "strictNullChecks": true, // Ensures null and undefined values are handled properly
+    "verbatimModuleSyntax": true, // Preserves import/export syntax as written
+    "allowJs": true, // Allows JavaScript files to be compiled
+    "baseUrl": "src", // Sets the base directory for resolving non-relative module names
+    "paths": { // Configures module path aliases for import statements
+      "@/*": ["*"],
+      "@assets/*": ["assets/*"],
+      "@images/*": ["assets/images/*"],
+      "@components/*": ["components/*"],
+      "@layouts/*": ["layouts/*"],
+      "@styles/*": ["styles/*"],
+      "@utils/*": ["utils/*"]
+    },
+    "types": ["astro/client"], // Specifies type declaration files to include
+    "moduleResolution": "bundler", // Determines how modules are resolved
+    "allowImportingTsExtensions": true, // Allows imports with .ts extensions
+    "resolveJsonModule": true, // Allows importing JSON modules
+    "isolatedModules": true, // Ensures each file can be safely transpiled without dependencies
+    "noEmit": true, // Doesn't generate output files
+    "strict": true, // Enables all strict type checking options
+    "skipLibCheck": true, // Skips type checking of declaration files
+    "noUncheckedIndexedAccess": true, // Adds undefined to indexed access results
+    "forceConsistentCasingInFileNames": true, // Ensures consistent casing in file names
+    "outDir": "./dist" // Redirects output structure to the 'dist' directory
+  },
+  "exclude": [ // Specifies files to exclude from compilation
+    "node_modules",
+    "dist"
+  ]
 }
