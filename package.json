@@ -15,7 +15,11 @@
     "check": "astro check",
     "dev": "astro dev",
     "preview": "astro preview",
-    "build": "astro check && astro build"
+    "build": "astro check && astro build",
+    "lint": "eslint --ext .js,.ts,.astro src",
+    "lint:fix": "eslint --ext .js,.ts,.astro src --fix",
+    "format": "prettier --write \"src/**/*.{astro,html,js,md,mdx,ts}\"",
+    "format:check": "prettier --check \"src/**/*.{astro,html,js,md,mdx,ts}\""
   },
   "browserslist": [
     "last 2 versions",
@@ -26,13 +30,15 @@
     "@astrojs/mdx": "^4.1.0",
     "@astrojs/rss": "^4.0.11",
     "@astrojs/sitemap": "^3.2.1",
+    "@fontsource-variable/bricolage-grotesque": "^5.2.6",
+    "@fontsource-variable/plus-jakarta-sans": "^5.2.5",
+    "@iconify-json/ph": "^1.2.2",
     "@playform/compress": "^0.1.9",
     "@tailwindcss/vite": "^4.1.4",
     "astro": "^5.4.2",
-    "tailwindcss": "^4.1.4",
-    "@iconify-json/ph": "^1.2.2",
     "astro-icon": "^1.1.5",
-    "daisyui": "^5.0.23"
+    "daisyui": "^5.0.23",
+    "tailwindcss": "^4.1.4"
   },
   "devDependencies": {
     "@eslint/js": "^9.24.0",
