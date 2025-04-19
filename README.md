@@ -42,6 +42,17 @@ A minimal Astro starter template featuring Tailwind CSS and DaisyUI for rapid UI
 
 - **TypeScript (`tsconfig.json`):** Extends Astro's strict config, includes path aliases (`@/*`).
 - **Astro (`astro.config.mjs`):** Integrates Tailwind, MDX, Sitemap, Astro Icon, Playform Compress. Enables prefetching and experimental features like `responsiveImages` and `contentIntellisense`.
+- **Legacy flags:** If using older content collections, enable legacy support in `astro.config.mjs`:
+  ```js
+  // astro.config.mjs
+  export default defineConfig({
+    // ... other config
+    // for legacy support of old collections
+    legacy: {
+      collections: true
+    }
+  });
+  ```
 
 ## 📁 Project Structure
 

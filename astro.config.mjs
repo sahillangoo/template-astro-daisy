@@ -23,11 +23,7 @@ export default defineConfig({
 		// Contains experimental features
 		responsiveImages: true,
 		clientPrerender: true,
-		contentIntellisense: true,
-		// for legacy support of old collections
-		// legacy: {
-		// 	collections: true
-		// }
+		contentIntellisense: true
 	},
 	// for legacy support of old collections
 	// legacy: {
