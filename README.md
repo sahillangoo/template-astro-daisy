@@ -1,68 +1,86 @@
-# Astro Starter Kit: Blog
+# Astro Template: Tailwind & DaisyUI
 
-```sh
-npm create astro@latest -- --template blog
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+Version: 0.1.0
+
+A minimal Astro starter template featuring Tailwind CSS and DaisyUI for rapid UI development.
+
+## ✨ Key Features
+
+- **Astro:** Fast sites, less JavaScript.
+- **Tailwind CSS:** Utility-first CSS framework.
+- **DaisyUI:** Tailwind CSS components.
+- **MDX Support:** Markdown + JSX.
+- **SEO Ready:** Automatic Sitemap & RSS generation.
+- **Icons:** Astro Icon with Phosphor icon set.
+- **Fonts:** Self-hosted open-source fonts via Fontsource.
+- **Code Quality:** ESLint, Prettier, TypeScript (Strict).
+- **Performance:** Optimized Images (experimental), Prefetching.
+
+## 🚀 Getting Started
+
+1.  **Install Dependencies:**
+    ```bash
+    npm install
+    ```
+2.  **Run Development Server:**
+    ```bash
+    npm run dev
+    ```
+    Visit `http://localhost:4321`
+
+## 🎨 Customization
+
+1.  **Favicon:** Replace `public/favicon.svg` with your icon.
+2.  **Domain:** Search and replace `example.com` with your domain in:
+    - `astro.config.mjs`
+    - `public/robots.txt` (create if needed)
+    - `public/_redirects` (if using Netlify/Cloudflare)
+    - `src/consts.ts`
+
+## 🔧 Configuration Highlights
+
+- **TypeScript (`tsconfig.json`):** Extends Astro's strict config, includes path aliases (`@/*`).
+- **Astro (`astro.config.mjs`):** Integrates Tailwind, MDX, Sitemap, Astro Icon, Playform Compress. Enables prefetching and experimental features like `responsiveImages` and `contentIntellisense`.
+
+## 📁 Project Structure
+
 ```
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/blog)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/blog)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/blog/devcontainer.json)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![blog](https://github.com/withastro/astro/assets/2244813/ff10799f-a816-4703-b967-c78997e8323d)
-
-Features:
-
-- ✅ Minimal styling (make it your own!)
-- ✅ 100/100 Lighthouse performance
-- ✅ SEO-friendly with canonical URLs and OpenGraph data
-- ✅ Sitemap support
-- ✅ RSS Feed support
-- ✅ Markdown & MDX support
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-├── public/
+/
+├── public/         # Static assets (favicon.svg, robots.txt)
 ├── src/
-│   ├── components/
-│   ├── content/
-│   ├── layouts/
-│   └── pages/
-├── astro.config.mjs
-├── README.md
-├── package.json
-└── tsconfig.json
+│   ├── components/   # Reusable UI components
+│   ├── content/      # Content collections (e.g., blog posts)
+│   ├── layouts/      # Page layouts
+│   └── pages/        # Site pages/routes
+│   └── consts.ts     # Site constants
+│   └── env.d.ts      # TypeScript environment types
+├── astro.config.mjs  # Astro configuration
+├── package.json      # Project dependencies & scripts
+└── tsconfig.json     # TypeScript configuration
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## 🧞 Available Commands
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+| Command                | Action                                     |
+| :--------------------- | :----------------------------------------- |
+| `npm install`          | Installs dependencies                      |
+| `npm run sync`         | Syncs Astro content collections types      |
+| `npm run check`        | Runs Astro type checking                   |
+| `npm run dev`          | Starts local dev server (`localhost:4321`) |
+| `npm run build`        | Builds the production site to `./dist/`    |
+| `npm run preview`      | Previews the production build locally      |
+| `npm run astro ...`    | Runs Astro CLI commands                    |
+| `npm run lint`         | Runs ESLint checks                         |
+| `npm run lint:fix`     | Runs ESLint checks and fixes issues        |
+| `npm run format`       | Formats code with Prettier                 |
+| `npm run format:check` | Checks code formatting with Prettier       |
 
-The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
+## 👀 Learn More
 
-Any static assets, like images, can be placed in the `public/` directory.
+- [Astro Documentation](https://docs.astro.build)
+- [Astro Discord](https://astro.build/chat)
 
-## 🧞 Commands
+## 📄 License
 
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-
-## Credit
-
-This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
+MIT License (see LICENSE file if included).
