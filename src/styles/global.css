@@ -71,11 +71,14 @@
 @custom-variant dark (&:where([data-theme=night], [data-theme=night] *));
 
 @theme {
+	/* --font-heading:
+		bricolage-grotesque, serif, ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif; */
 	--font-heading:
-		bricolage-grotesque, serif, ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
+		'Bricolage Grotesque Variable', sans-serif, ui-sans-serif, system-ui, sans-serif,
+		'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 	--font-body:
-		plus-jakarta-sans, sans-serif, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
-		'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+		'Plus Jakarta Sans Variable', sans-serif, ui-sans-serif, system-ui, sans-serif,
+		'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 
 	--text-xxs: 0.625rem;
 	--text-xxs--line-height: 0.875rem;

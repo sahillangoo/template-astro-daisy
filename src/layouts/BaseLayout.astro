@@ -1,5 +1,7 @@
 ---
 import BaseHead from '@/components/BaseHead.astro';
+import Footer from '@/components/navigation/Footer.astro';
+import Navbar from '@/components/navigation/Navbar.astro';
 
 interface Props {
 	title?: string;
@@ -15,7 +17,7 @@ const { title, description, image } = Astro.props;
 	<head>
 		<BaseHead title={title} description={description} image={image} />
 	</head>
-	<body data-theme="light" class="bg-base-100 relative isolate min-h-screen font-sans antialiased">
+	<body data-theme="light" class="bg-base-100 font-body relative isolate min-h-screen antialiased">
 		<a
 			href="#main-content"
 			class="focus:bg-base-100 sr-only focus:not-sr-only focus:fixed focus:z-50 focus:p-4">
@@ -29,7 +31,9 @@ const { title, description, image } = Astro.props;
 			</div>
 		</noscript>
 		<main id="main-content">
+			<Navbar />
 			<slot />
+			<Footer />
 		</main>
 	</body>
 </html>

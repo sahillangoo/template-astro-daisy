@@ -1,0 +1,22 @@
+---
+import { Icon } from 'astro-icon/components';
+---
+
+<footer class="footer footer-center bg-base-200 text-base-content px-12 py-16">
+	<nav class="grid grid-flow-col gap-4">
+		<a href="/about" class="link link-hover">About us</a>
+		<a href="/contact" class="link link-hover">Contact</a>
+		<a href="/jobs" class="link link-hover">Jobs</a>
+		<a href="/press" class="link link-hover">Press kit</a>
+	</nav>
+	<nav class="md:place-self-center md:justify-self-center">
+		<div class="grid grid-flow-col gap-4">
+			<a><Icon name="ph:twitter-logo" class="h-6 w-6" /></a>
+			<a><Icon name="ph:youtube-logo" class="h-6 w-6" /></a>
+			<a><Icon name="ph:facebook-logo" class="h-6 w-6" /></a>
+		</div>
+	</nav>
+	<aside>
+		<p>Copyright © {new Date().getFullYear()} - All right reserved by Clarity Template</p>
+	</aside>
+</footer>
