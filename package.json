@@ -34,7 +34,11 @@
     "lint": "eslint --ext .js,.ts,.astro src",
     "lint:fix": "eslint --ext .js,.ts,.astro src --fix",
     "format": "prettier --write \"src/**/*.{astro,html,js,md,mdx,ts}\"",
-    "format:check": "prettier --check \"src/**/*.{astro,html,js,md,mdx,ts}\""
+    "format:check": "prettier --check \"src/**/*.{astro,html,js,md,mdx,ts}\"",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{js,ts,astro,json,css,md,html,mdx}": "prettier --write"
   },
   "browserslist": [
     "last 2 versions",
@@ -69,6 +73,8 @@
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-prettier": "^5.2.6",
     "globals": "^16.0.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.1",
     "prettier": "^3.5.3",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-astro-organize-imports": "^0.4.11",
