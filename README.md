@@ -15,6 +15,7 @@ A minimal Astro starter template featuring Tailwind CSS and DaisyUI for rapid UI
 - **Icons:** Astro Icon with Phosphor icon set.
 - **Fonts:** Self-hosted open-source fonts via Fontsource.
 - **Code Quality:** ESLint, Prettier, TypeScript (Strict).
+- **Git Hooks:** Husky & Lint-Staged for pre-commit checks.
 - **Performance:** Optimized Images (experimental), Prefetching.
 
 ## 🚀 Getting Started
@@ -53,6 +54,7 @@ A minimal Astro starter template featuring Tailwind CSS and DaisyUI for rapid UI
     }
   });
   ```
+- **Husky & Lint-Staged (`package.json`, `.husky/`):** Enforces code formatting (Prettier) on staged files before committing.
 
 ## 📁 Project Structure
 
@@ -76,6 +78,7 @@ A minimal Astro starter template featuring Tailwind CSS and DaisyUI for rapid UI
 | Command                | Action                                     |
 | :--------------------- | :----------------------------------------- |
 | `npm install`          | Installs dependencies                      |
+| `npm run prepare`      | Installs Husky git hooks                   |
 | `npm run sync`         | Syncs Astro content collections types      |
 | `npm run check`        | Runs Astro type checking                   |
 | `npm run dev`          | Starts local dev server (`localhost:4321`) |
