@@ -55,7 +55,7 @@
     "@iconify-json/ph": "^1.2.2",
     "@playform/compress": "^0.1.9",
     "@tailwindcss/vite": "^4.1.4",
-    "astro": "^5.7.4",
+    "astro": "^5.14.4",
     "astro-icon": "^1.1.5",
     "daisyui": "^5.0.27",
     "tailwindcss": "^4.1.4",
